@@ -8,55 +8,76 @@
     </title>
   </head>
   <body>
-    <h1>The BCIS Roadmap</h1>
+    <fieldset>
+    <h1>The BCIS (Bachelors in Computer Information Systems) Roadmap</h1>
     <nav>
       <table>
           <thead>
               <tr>
-                  <th colspan="1">
-                      <p>
-                        | <a href="index.html">Home</a>
-                        | <a href="progress.html">Your Roadmap</a> 
-                        | <a href="contact.html">Contact Us</a> |
-                      </p>
-
+                  <th colspan="3">
+                      <p>Menu</p>
                   </th>
               </tr>
           </thead>
           <tbody>
               <tr>
-                  <td>
-                    <ul>
-                      <li><a href="#info">Contact Info</a></li>
-                      <li><a href="#newsletter">Sign Up to Our Newsletter!</a></li>
-                    </ul>
-                  </td>
+                  <td><a href="index.html">Home</a></td>
+                  <td><a href="progress.html">Your Roadmap</a></td>
+                  <td><a href="contact.html">Contact Us</a></td>
               </tr>
           </tbody>
       </table>
-
   </nav>
 
     <h2>Contact Info</h2>
-    <p>/number/ /email/ etc</p>
+    <ul>
+      <ol>
+        <b> Abdulrahman Muhammad:</b> amuha044@mtroyal.ca
+      </ol>
+      <br>
+      <ol>
+        <b> Bryan Naiijo:</b> bnaij554@mtroyal.ca
+      </ol>
+      <br>
+      <ol>
+        <b> John David:</b> jdavi977@mtroyal.ca
+      </ol>
+      <br>
+      <ol>
+        <b>MRU Call Center:</b> (403) 440-6111
+      </ol>
+    </ul>
 
+<fieldset>
     <h2>Sign Up to Our Newsletter!</h2>
     <p>Recieve new info that you as an MRU BCIS student might want to
       hear about! Such as events by CAMRU, CybHER, and BASS, 
       upcoming career fairs, new Computing Communication Network and 
       Entrepreneurship Community posts, and more!
     </p>
-    <form>
-      <fieldset>
+        <form action="process_signup.php" method="post">
+          <fieldset>
+          <!-- Replace "process_signup.php" with the actual path to your server-side script for handling form submissions -->
+  
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
 
-      </fieldset>
-    </form>
-    
+          <label for="number">Phone Number:</label>
+          <input type="text" id="number" name="number" required>
+  
+          <input type="submit" value="Sign Up">
+          </fieldset>
+      </form>
+    </fieldset>
     <h2>Helpful Links</h2>
     <p>we can insert links here</p>
-
+</fieldset>
   </body>
   <footer>
+    <fieldset>
     <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
     <br>
     <small>Feb 2024</small>
