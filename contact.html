@@ -2,87 +2,60 @@
 <html>
   <head>
     <meta charset="uft-8">
-    <link ref="stylesheet" type="text/css" href=/css/stylesheet.css>
     <title>
-      Assignment 1: HTML & CSS
+      Contact Us
     </title>
-  </head>
-  <body>
-    <fieldset>
-    <h1>The BCIS (Bachelors in Computer Information Systems) Roadmap</h1>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     <nav>
-      <table>
-          <thead>
-              <tr>
-                  <th colspan="3">
-                      <p>Menu</p>
-                  </th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td><a href="index.html">Home</a></td>
-                  <td><a href="progress.html">Your Roadmap</a></td>
-                  <td><a href="contact.html">Contact Us</a></td>
-              </tr>
-          </tbody>
-      </table>
-  </nav>
+      <a href="index.html" class="nav-link"><b>Home</b></a>
+      <a href="progress.html" class="nav-link"><b>Program Roadmap</b></a>
+      <a href="contact.html" class="nav-link active"><b>Contact Us</b></a>
+    </nav>
+  </head>
 
-    <h2>Contact Info</h2>
-    <ul>
-      <ol>
-        <b> Abdulrahman Muhammad:</b> amuha044@mtroyal.ca
-      </ol>
-      <br>
-      <ol>
-        <b> Bryan Naiijo:</b> bnaij554@mtroyal.ca
-      </ol>
-      <br>
-      <ol>
-        <b> John David:</b> jdavi977@mtroyal.ca
-      </ol>
-      <br>
-      <ol>
-        <b>MRU Call Center:</b> (403) 440-6111
-      </ol>
-    </ul>
-
+<body>
 <fieldset>
-    <h2>Sign Up to Our Newsletter!</h2>
-    <p>Recieve new info that you as an MRU BCIS student might want to
-      hear about! Such as events by CAMRU, CybHER, and BASS, 
-      upcoming career fairs, new Computing Communication Network and 
-      Entrepreneurship Community posts, and more!
+    <h2>Connect with our team!</h2>
+    <br><br>
+    <p>Feel free to inquire us about any questions or concerns you may have. Do not hesitate to make any suggestions 
+      that can help us improve our website!
     </p>
-        <form action="process_signup.php" method="post">
-          <fieldset>
-          <!-- Replace "process_signup.php" with the actual path to your server-side script for handling form submissions -->
+    <br><br>
+    <div class="welcome-intro">
+      <form action="mailto:amuha044@mtroyal.ca">
+        
+        
+        <input  type="text" maxlength="40" size ="40" name="name" class="form-input" placeholder="Your Name" required="">
+        <br><br>
+        <input  type="text"  maxlength="40" size ="40" name="tp" class="form-input" placeholder="Your Number" required=""  >
+        <br><br>
+        <input  type="text" maxlength="40" size ="40" name="subject" class="form-input" placeholder="Subject" required="">
+        <br><br>
+        <textarea minlength="10" class="form-textarea" placeholder="Message..." required=""></textarea>
+        <br><br>
+        <button type="submit" class="learnBtn">Send</button>
   
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-  
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="number">Phone Number:</label>
-          <input type="text" id="number" name="number" required>
-  
-          <input type="submit" value="Sign Up">
-          </fieldset>
       </form>
+    </div>
+  
     </fieldset>
     <h2>Helpful Links</h2>
-    <p>we can insert links here</p>
-</fieldset>
+    <p>Below are some additional links that you may peruse to answer some of your questions while website
+      get back to you!
+    </p>
+    <nav>
+      <a href="http://www.samru.ca" target="_blank">SAMRU</a>
+      <a href="https://www.mtroyal.ca/CampusServices/LivingonCampus/index.htm" target="_blank">Residence Service</a>
+    </nav>
+    <br>
+    <br>
   </body>
+
   <footer>
     <fieldset>
     <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
     <br>
-    <small>Feb 2024</small>
-    <br><br>
-    <small><a href="contact.html">Contact Us</a></small>
+    <small>Feb. 2024</small>
     </fieldset>
   </footer>
 </html>
