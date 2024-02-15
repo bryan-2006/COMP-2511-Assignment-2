@@ -1,5 +1,5 @@
 /* Reset some default styles */
-body, form, nav {
+body, h1, h2, p, form, nav {
     margin: 0;
     padding: 0;
   }
@@ -24,20 +24,34 @@ body, form, nav {
     padding: 20px;
   }
   
+  /* Style for unordered lists and its items */
+  li, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+
   /* Style the navigation menu */
   nav {
     background-color: #000000;
     padding: 10px;
+    text-align: center; /* Center the content within the nav */
   }
   
   nav a {
     color: #fff;
     text-decoration: none;
+    margin-right: 15px;
+    
   }
 
+  table{
+    margin: 0 auto; /* Center the table horizontally within its container */
+  }
+  
   /* Style the main content section */
   fieldset {
-    max-width: 600px;
+    width: 600px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -73,6 +87,7 @@ body, form, nav {
     background-color: #555;
   }
   
+
   /* Style the footer section */
   footer {
     background-color: #000000;
@@ -83,4 +98,5 @@ body, form, nav {
     bottom: 0;
     width: 100%;
   }
+
   

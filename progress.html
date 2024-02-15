@@ -2,23 +2,24 @@
 <html>
   <head>
     <meta charset="uft-8">
-    <link ref="stylesheet" type="text/css" href=/css/stylesheet.css>
+    <link rel="stylesheet" type="text/css" href="css/progress.css">
     <title>
       Assignment 1: HTML & CSS
     </title>
   </head>
   <body>
+    <br><br>
     <h1>The BCIS Roadmap</h1>
-    <hr>
+    <br><br>
     <nav>
       <table>
           <thead>
               <tr>
                   <th colspan="1">
                       <p>
-                        | <a href="index.html">Home</a>
-                        | <a href="progress.html">Your Roadmap</a> 
-                        | <a href="contact.html">Contact Us</a> |
+                        <a href="index.html">Home</a>
+                        <a href="progress.html">Your Roadmap</a> 
+                        <a href="contact.html">Contact Us</a>
                       </p>
 
                   </th>
@@ -28,8 +29,15 @@
               <tr>
                   <td>
                     <ul>
+                      <br>
                       <li><a href="#roadmap">Your Roadmap So Far</a></li>
+                      <li><a href="#gnedInfo">General Education</a></li>
+                      <li><a href="#coopAndWork">COOP 0001 & COMP 3591</a> </li>
                       <li><a href="#seniorCS">Approved Senior CS Options</a></li>
+                      <li><a href="#seniorBusiness">Approved Senior Business Options</a></li>
+                      <li><a href="#electivesInfo">Electives</a></li>
+                      <li><a href="#electivesInfo">Junior Courses</a></li>
+                      <li><a href="#advising">Academic Advising</a></li>
                     </ul>
                   </td>
               </tr>
@@ -37,10 +45,11 @@
       </table>
 
   </nav>
-
-
+  <main>
+    <br>
 
     <h2 id="roadmap">Your Roadmap So Far</h2>
+    <br>
     <p>
         This webpage allows students to track their progress by 
         following the BCIS guide from 2023-2024. This means that by 
@@ -54,40 +63,212 @@
         come back to it when looking to see what classes to apply 
         to for the next semester! 
     </p>
-
+    <br>
     <form>
         <h3>1st Year</h3>
         <fieldset>
             <legend>Fall</legend>
+            <input name="comp1701" id="comp1701" type="radio">    
+            <label for="comp1701">COMP 1701 </label>
+            <br><br>
+            <input name="gnedc1t1" id="gned1101" type="radio">    
+            <label for="gned1101"><a href="#gnedInfo">GNED</a> 1101 </label>
+            <input name="gnedc1t1" id="gned1103" type="radio">    
+            <label for="gned1103"><a href="#gnedInfo">GNED</a> 1103 </label>
+            <br><br>
+            <input name="gnedc1t1" id="gned1401" type="radio">    
+            <label for="gned1401"><a href="#gnedInfo">GNED</a> 1401 </label>
+            <input name="gnedc1t1" id="gned1403" type="radio">    
+            <label for="gned1403"><a href="#gnedInfo">GNED</a> 1403 </label>
+            <input name="gnedc1t1" id="gned1404" type="radio">    
+            <label for="gned1404"><a href="#gnedInfo">GNED</a> 1404 </label>
+            <br><br>
+            <fieldset>
+              <legend>or in Winter</legend>
+              <input name="math1505" id="math1505" type="radio">    
+              <label for="math1505">MATH 1505 </label>
+              <br><br>
+              <input name="mktgORlscmFirstYear" id="mktg2150" type="radio">    
+              <label for="mktg2150">MKTG 2150 </label>
+              <input name="mktgORlscmFirstYear" id="gned1103" type="radio">    
+              <label for="lscm2201">LSCM 2201 </label>
+              <br><br>
+              <input name="gnedc1t1" id="gned1301" type="radio">    
+              <label for="gned1301"><a href="#gnedInfo">GNED</a> 1301 </label>
+              <input name="gnedc1t1" id="gned1303" type="radio">    
+              <label for="gned1303"><a href="#gnedInfo">GNED</a> 1303 </label>
+              <input name="gnedc1t1" id="gned1304" type="radio">    
+              <label for="gned1304"><a href="#gnedInfo">GNED</a> 1304 </label>
+            </fieldset>
+
         </fieldset>
+        <br>
         <fieldset>
             <legend>Winter</legend>
+            <input name="comp1502" id="comp1502" type="radio">    
+            <label for="comp1502">COMP 1502 </label>
+            <br><br>
+            <input name="comp2511" id="comp2511" type="radio">    
+            <label for="comp2511">COMP 2511 </label>  
+            <br><br>
+            <input name="mgmt3210" id="mgmt3210" type="radio">    
+            <label for="mgmt3210">MGMT 3210 </label>
+            <br><br>
+            <fieldset>
+              <legend>or in Fall</legend>
+              <input name="math1505" id="math1505" type="radio">    
+              <label for="math1505">MATH 1505 </label>
+              <br><br>
+              <input name="mktgORlscmFirstYear" id="mktg2150" type="radio">    
+              <label for="mktg2150">MKTG 2150 </label>
+              <input name="mktgORlscmFirstYear" id="gned1103" type="radio">    
+              <label for="lscm2201">LSCM 2201 </label>
+              <br><br>
+              <input name="gnedc1t1" id="gned1301" type="radio">    
+              <label for="gned1301"><a href="#gnedInfo">GNED</a> 1301 </label>
+              <input name="gnedc1t1" id="gned1303" type="radio">    
+              <label for="gned1303"><a href="#gnedInfo">GNED</a> 1303 </label>
+              <input name="gnedc1t1" id="gned1304" type="radio">    
+              <label for="gned1304"><a href="#gnedInfo">GNED</a> 1304 </label>
+            </fieldset>
         </fieldset>
         <br>
 
         <h3>2nd Year</h3>
         <fieldset>
-            <legend>Fall</legend>
+          <legend>Fall</legend>
+          <input name="acct2121" id="acct2121" type="radio">    
+          <label for="acct2121">ACCT 2121 </label>
+          <br><br>
+          <input name="comp2503" id="comp2503" type="radio">    
+          <label for="comp2503">COMP 2503 </label>
+          <br><br>
+          <input name="comp2531" id="comp2531" type="radio">    
+          <label for="comp2531">COMP 2531 </label>
+          <br><br>
+          <input name="gnedc2t1" id="gned1201" type="radio">    
+          <label for="gned1201"><a href="#gnedInfo">GNED</a> 1201 </label>
+          <input name="gnedc2t1" id="gned1202" type="radio">    
+          <label for="gned1202"><a href="#gnedInfo">GNED</a> 1202 </label>
+          <input name="gnedc2t1" id="gned1203" type="radio">    
+          <label for="gned1203"><a href="#gnedInfo">GNED</a> 1203 </label>
+          <br><br>
+          <input name="gned2XXX" id="gned2XXX" type="radio">    
+          <label for="gned2XXX">Tier 2 from <a href="#gnedInfo">GNED</a> Cluster 2/3/4 </label>
+          <br><br>
+          <fieldset>
+            <legend>or in Winter</legend>
+            <input name="coop" id="coop" type="radio">    
+            <label for="coop">COOP 0001 </label>
+          </fieldset>
+
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Winter</legend>
+          <input name="hres2170" id="hres2170" type="radio">    
+          <label for="hres2170">HRES 2170 </label>
+          <br><br>
+          <input name="comp2521" id="comp2521" type="radio">    
+          <label for="comp2521">COMP 2521 </label>  
+          <br><br>
+          <input name="comp2541" id="comp2541" type="radio">    
+          <label for="comp2541">COMP 2541 </label>  
+          <br><br>
+          <input name="gned21XX" id="gned21XX" type="radio">    
+          <label for="gned21XX">Tier 2 from <a href="#gnedInfo">GNED</a> Cluster 1 </label>
+          <br><br>
+          <input name="anotherTier2GNED" id="anotherTier2GNED" type="radio">    
+          <label for="anotherTier2GNED">Tier 2 from <a href="#gnedInfo">GNED</a> Cluster 2/3/4 </label>
+          <br><br>
+          <fieldset>
+            <legend>or in Fall</legend>
+            <input name="coop" id="coop" type="radio">    
+            <label for="coop">COOP 0001 </label>
+          </fieldset>
+      </fieldset>
+      <br>
+
+      <h3>3rd Year</h3>
+      <fieldset>
+          <legend>Fall</legend>
+          <input name="comp3523" id="comp3523" type="radio">    
+          <label for="comp3523">COMP 3523 </label>
+          <br><br>
+          <input name="comp3512" id="comp3512" type="radio">    
+          <label for="comp3512">COMP 3512 </label>
+          <br><br>
+          <input name="advancedCS1" id="advancedCS1" type="radio">    
+          <label for="advancedCS1">Advanced Senior CS Option </label>
+          <br><br>
+          <input name="advancedBusiness1" id="advancedBusiness1" type="radio">    
+          <label for="advancedBusiness1">Advanced Senior Business Option </label>
+          <br><br>
+          <input name="gned3XXX1" id="gned3XXX1" type="radio">    
+          <label for="gned3XXX1">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
+          <br>
         </fieldset>
-        <fieldset>
-            <legend>Winter</legend>
-        </fieldset>
-        <br>
-        <h3>3rd Year</h3>
-        <fieldset>
-            <legend>Fall</legend>
-        </fieldset>
-        <fieldset>
-            <legend>Winter</legend>
-        </fieldset>
-        <br>
+      </fieldset>
+      <fieldset>
+          <legend>Winter</legend>
+          <input name="comp3533" id="comp3533" type="radio">    
+          <label for="comp3533">COMP 3533 </label>
+          <br><br>
+          <input name="comp3309" id="comp3309" type="radio">    
+          <label for="comp3309">COMP 3309 </label>
+          <br><br>
+          <input name="advancedCS2" id="advancedCS2" type="radio">    
+          <label for="advancedCS2">Advanced Senior CS Option </label>
+          <br><br>
+          <input name="gned3XXX2" id="gned3XXX2" type="radio">    
+          <label for="gned3XXX2">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
+          <br><br>
+          <input name="gned3XXX3" id="gned3XXX3" type="radio">    
+          <label for="gned3XXX3">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
+      </fieldset>
+      <fieldset>
+        <legend>Spring/Summer</legend>
+        <input name="comp3591" id="comp3591" type="radio">    
+        <label for="comp3591">COMP 3591 </label>
+      </fieldset>
+      <br>
 
         <h3>4th Year</h3>
         <fieldset>
             <legend>Fall</legend>
+            <input name="comp4534" id="comp4534" type="radio">    
+            <label for="comp4534">COMP 4534 </label>
+            <br><br>
+            <input name="advancedCS3" id="advancedCS3" type="radio">    
+            <label for="advancedCS3">Advanced Senior CS Option </label>
+            <br><br>
+            <input name="advancedCS4" id="advancedCS4" type="radio">    
+            <label for="advancedCS4">Advanced Senior CS Option </label>
+            <br><br>
+            <input name="elective1" id="elective1" type="radio">    
+            <label for="elective1">Elective Course </label>
+            <br><br>
+            <input name="elective2" id="elective2" type="radio">    
+            <label for="elective2">Elective Course </label>
+            <br>
         </fieldset>
         <fieldset>
             <legend>Winter</legend>
+            <input name="advancedBusiness2" id="advancedBusiness2" type="radio">    
+            <label for="advancedBusiness2">Advanced Senior Business Option </label>
+            <br><br>
+            <input name="advancedCSorBusiness1" id="advancedCSorBusiness1" type="radio">    
+            <label for="advancedCSorBusiness1">Advanced Senior CS or Business Option </label>
+            <br><br>
+            <input name="advancedCSorBusiness2" id="advancedCSorBusiness2" type="radio">    
+            <label for="advancedCSorBusiness2">Advanced Senior CS or Business Option </label>
+            <br><br>
+            <input name="elective3" id="elective3" type="radio">    
+            <label for="elective3">Elective Course </label>
+            <br><br>
+            <input name="elective3" id="elective3" type="radio">    
+            <label for="elective3">Elective Course </label>
+            <br>
         </fieldset>
       </form>
 
@@ -95,6 +276,26 @@
       <br>
 
       <article>
+        <section>
+          <h2 id="gnedInfo">General Education</h2>
+          <br>
+          <p>Cluster 1: Numeracy & Scientific Literacy</p><br>
+          <p>Cluster 2: Values, Beliefs & Identity</p><br>
+          <p>Cluster 3: Community & Society</p><br>
+          <p>Cluster 4: Communication</p><br>
+          <ul>
+            <li>Sudents must take a foundation level course from all 4 clusters</li>
+            <li>Sudents must take a tier 2 (X2XX or equivalent) course from all 3 clusters</li>            
+            <li>Sudents must take a tier 3 (X3XX or equivalent) course from all 3 clusters</li>            
+          </ul>
+        </section>
+        <br><br>
+        <section>
+          <h2 id="coopAndWork">COOP 0001 & COMP 3591</h2>
+          <br>
+          <p>COOP 0001, Orientation to Cooperative Eduction, must be taken before COMP 3591, mandatory work experience that relates to BCIS. </p>
+        </section>
+        <br><br>
         <section>
           <h2 id="seniorCS">Approved Senior CS Options</h2>
           <ul>
@@ -111,10 +312,39 @@
             <li>COMP 5590 - Senior Project</li>
           </ul>
         </section>
+        <br>
+        <section>
+          <h2 id="seniorBusiness">Approved Senior Business Options</h2>
+          <br>
+          <p>Any approved 3000 level or higher course offered by the Bissett School of Business. </p>
+        </section>
+        <br><br>
+        <section>
+          <h2 id="electivesInfo">Electives</h2>
+          <br>
+          <p>Any 3 credit course not required for the program. 2XXX+ classes are advised to be chosen to not exceed the <a href="#juniorClasses">junior course limit</a>.</p>
+        </section>
+        <br><br>
+        <section>
+          <h2 id="juniorClasses">Junior Courses</h2>
+          <br>
+          <p>1000 level courses; maximum limit of 16 junior courses for graduation.</p>
+        </section>        
+        <br><br>
+        <section>
+          <h2 id="advising">Academic Advising</h2>
+          <ul>
+            <li>Newly admitted into BCIS? Visit <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/starting-your-degree/index.htm">Starting Your Degree</a> page offered by MRU's Faculty of Science and Technology for help. </li>
+            <li>Visit <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/navigating-your-degree/index.htm">Navigating Your Degree</a> by MRU for further help in degree customization, course optimization, minors, schedules, oppurtunities, and more!</li>
+            <li>If you are currently a BCIS student at MRU and wish to contact your academic advisor, Ryan Owchar, click <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/contact-my-advisor/index.htm">here</a>.</li>
+          </ul>
+        </section>
+        <br><br><br><br>
       </article>
+  </main>
+    <br><br><br>
   </body>
   <footer>
-    <hr>
     <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
     <br>
     <small>Feb 2024</small>
