@@ -3,7 +3,7 @@ body, form, nav {
     margin: 0;
     padding: 0;
   }
-  
+
 /* Style the active navigation link */
 .active {
     background-color: #000000; /* Change this color to your preference */
@@ -79,7 +79,7 @@ body, form, nav {
     color: #000000;
     text-align: center;
     padding: 1px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
   }
