@@ -8,6 +8,7 @@ body, h1, h2, p, form, nav {
 section, h3[class="yearHeader"]{
     margin-left: 33px;
     margin-right: 50px;
+    align-self: center;
 }
 
 
@@ -48,14 +49,21 @@ section, h3[class="yearHeader"]{
   }
   
   nav a {
-    color: #000000;
+    color: #9e9e9e;
     text-decoration: none;
     margin-right: 15px;
     
   }
 
   nav a:hover{
-    color: #b0f2f8;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+    
+  }
+
+  nav a[class="selected"]{
+    color: #000000;
     text-decoration: none;
     margin-right: 15px;
     
