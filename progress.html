@@ -9,20 +9,20 @@
   </head>
   <body>
     <header>
-    <br><br>
-    <h1>The BCIS Roadmap</h1>
-    <br><br>
+    <br>
+    <img class="logo" src="images/logo.png" height="90" width="120" alt="The BCIS Roadmap logo">
+    <h1 class="logoName">The BCIS Roadmap</h1>
+    <br>
     </header>
     <nav>
+      <!--We used a table with a list with one list element to fulfill the menu and table requirements together-->
       <table>
           <thead>
               <tr>
                   <th colspan="1">
-                      <p>
-                        <a href="index.html">Home</a>
-                        <a href="progress.html">Your Roadmap</a> 
-                        <a href="contact.html">Contact Us</a>
-                      </p>
+                    <br>
+                      <p class="mainMenu"> <a href="index.html">Home</a><a href="progress.html">Your Roadmap</a> <a href="contact.html">Contact Us</a></p>
+                      <br>
 
                   </th>
               </tr>
@@ -31,18 +31,31 @@
               <tr>
                   <td>
                     <ul>
-                      <li><a href="#roadmap">Your Roadmap So Far</a></li>
-                      <li><a href="#moreInfo">More Information</a></li>
+                      <li><small><a href="#roadmap">Your Roadmap So Far</a></small></li>
                     </ul>
                   </td>
               </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li><small><a href="#moreInfo">More Information</a></small></li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><small><a href="#advising">Academic Advising</a></small></li>
+                </ul>
+              </td>
+          </tr>
           </tbody>
       </table>
 
   </nav>
   <main>
     <br>
-
+    <section>
     <h2 id="roadmap">Your Roadmap So Far</h2>
     <br>
     <p>
@@ -59,8 +72,9 @@
         to for the next semester! 
     </p>
     <br>
+  </section>
     <form>
-        <h3>1st Year</h3>
+        <h3 class="yearHeader">1st Year</h3>
         <fieldset>
             <legend>Fall</legend>
             <input name="comp1701" id="comp1701" type="radio">    
@@ -129,7 +143,7 @@
         </fieldset>
         <br>
 
-        <h3>2nd Year</h3>
+        <h3 class="yearHeader">2nd Year</h3>
         <fieldset>
           <legend>Fall</legend>
           <input name="acct2121" id="acct2121" type="radio">    
@@ -184,7 +198,7 @@
       </fieldset>
       <br>
 
-      <h3>3rd Year</h3>
+      <h3 class="yearHeader">3rd Year</h3>
       <fieldset>
           <legend>Fall</legend>
           <input name="comp3523" id="comp3523" type="radio">    
@@ -227,7 +241,7 @@
       </fieldset>
       <br>
 
-        <h3>4th Year</h3>
+        <h3 class="yearHeader">4th Year</h3>
         <fieldset>
             <legend>Fall</legend>
             <input name="comp4534" id="comp4534" type="radio">    
@@ -270,8 +284,9 @@
       <br>
 
       <article>
-        <h2 id="moreInfo">More Information</h2>
+        <br>
         <section>
+          <h2 id="moreInfo">More Information</h2>
           <h3 id="gnedInfo">General Education</h3>
           <p>Cluster 1: Numeracy & Scientific Literacy</p><br>
           <p>Cluster 2: Values, Beliefs & Identity</p><br>
@@ -320,24 +335,24 @@
           <h3 id="juniorClasses">Junior Courses</h3>
           <p>1000 level courses; maximum limit of 16 junior courses for graduation.</p>
         </section>        
-        <br><br>
-        <section>
-          <h3 id="advising">Academic Advising</h3>
-          <ul>
-            <li>Newly admitted into BCIS? Visit <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/starting-your-degree/index.htm">Starting Your Degree</a> page offered by MRU's Faculty of Science and Technology for help. </li>
-            <li>Visit <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/navigating-your-degree/index.htm">Navigating Your Degree</a> by MRU for further help in degree customization, course optimization, minors, schedules, oppurtunities, and more!</li>
-            <li>If you are currently a BCIS student at MRU and wish to contact your academic advisor, Ryan Owchar, click <a href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/contact-my-advisor/index.htm">here</a>.</li>
-          </ul>
-        </section>
+        <br><br><br>
       </article>
+      <section>
+        <h2 id="advising">Academic Advising</h2>
+        <ul>
+          <li>Newly admitted into BCIS? Visit <a target=”_blank” href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/starting-your-degree/index.htm">Starting Your Degree</a> page offered by MRU's Faculty of Science and Technology for help. </li>
+          <li>Visit <a target=”_blank” href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/navigating-your-degree/index.htm">Navigating Your Degree</a> by MRU for further help in degree customization, course optimization, minors, schedules, oppurtunities, and more!</li>
+          <li>If you are currently a BCIS student at MRU and wish to contact your academic advisor, Ryan Owchar, click <a target=”_blank” href="https://www.mtroyal.ca/ProgramsCourses/FacultiesSchoolsCentres/ScienceTechnology/Advising/contact-my-advisor/index.htm">here</a>.</li>
+        </ul>
+      </section>
   </main>
     <br><br><br>
     <footer>
-      <fieldset>
+      <br><br><br>
       <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
       <br>
       <small>Feb. 2024</small>
-      </fieldset>
+      <br><br><br>
   </footer>
   </body>
 </html>
