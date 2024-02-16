@@ -8,36 +8,91 @@
     <link rel="stylesheet" type="text/css" href="css/contact.css">
 
   </head>
-<body>
-  <nav>
-    <a href="index.html" class="nav-link"><b>Home</b></a>
-    <a href="progress.html" class="nav-link"><b>Program Roadmap</b></a>
-    <a href="contact.html" class="nav-link active"><b>Contact Us</b></a>
-  </nav>
+  <body>
+    <header>
+    <img class="logo" src="images/logo.png" height="90" width="120" alt="The BCIS Roadmap logo">
+    <h1 class="logoName">The BCIS Roadmap</h1>
+    <br>
+    </header>
+    <nav>
+      <!--We used a table with a list with one list element to fulfill the menu and table requirements together-->
+      <table>
+          <thead>
+              <tr>
+                  <th colspan="1">
+                    <br>
+                      <p class="mainMenu"> <a href="index.html">Home</a><a href="progress.html" >Roadmap</a> <a href="contact.html" class="selected">Contact Us</a></p>
+                      <br>
+
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>
+                    <ul>
+                      <li><small><a href="#message">Send Us a Message</a></small></li>
+                    </ul>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+    </nav>
   <main>
-<fieldset>
-    <h2>Contact Us</h2>
-    <p>Do not hesitate to contact us regarding any questions, concerns, suggestions or comments you may have about us!
+    <br><br>
+    <h2 id="message">Send Us a Message</h2><br>
+    <p>For any questions, concerns, suggestions or comments you may have about us!
     </p>
     <br>
-    <div class="welcome-intro">
-      <form action="mailto:amuha044@mtroyal.ca">
+    <form id="contact" method="post" action="mailto:amuha044@mtroyal.ca">
+      <fieldset>
+        <label>Email*</label>
+                <!--source: https://stackoverflow.com/questions/5601647/html5-email-input-pattern-attribute-->
+        <br><br>
+        <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" size ="90" name="subject" class="form-input" placeholder="name@domain.com" required>
+        <br>
+        <br>
+        <label>Subject*</label>
+        <br><br>
+        <input type="text" maxlength="40" size ="90" name="subject" class="form-input" placeholder="Subject Line" required>
+        <br>
+        <br>
+        <label>Your Message*</label>
+        <br><br>
+        <textarea minlength="10" class="form-textarea" cols ="84" placeholder="Message..."></textarea>
+        <br>
+        <br>
+        <label>Phone Number</label>
+        <input type="tel" placeholder="123-456-7890" pattern="[0-9]{3}[\-][0-9]{3}[\-][0-9]{4}">
+        <br><br><br>
+        <p>Do you wish to be contacted through your phone?</p>
+
+        <input name="contactThroughPhone" type="radio" id="yes">
+        <label for="yes">Yes  </label>
+        <input name="contactThroughPhone" type="radio" id="no">
+        <label for="no">No  </label>
+
+        <br><br><br>
+
+        <label for="no">If you have a preferance for what date to be contacted:   </label>
+        <input name="date" type="date">
         
+
+        <br><br><br>
+        <p>I would like to receive a</p>
         
-        <input  type="text" maxlength="40" size ="40" name="name" class="form-input" placeholder="Your Name" required="">
+        <input name="newsletter" value="1" type="checkbox" id="newsletterW"><label for="newsletterW"> weekly newsletter  </label>
         <br>
-        <input  type="text"  maxlength="40" size ="40" name="tp" class="form-input" placeholder="Your Number" required=""  >
-        <br>
-        <input  type="text" maxlength="40" size ="40" name="subject" class="form-input" placeholder="Subject" required="">
-        <br>
-        <textarea minlength="10" class="form-textarea" placeholder="Message..." required=""></textarea>
-        <br>
-        <button type="submit" class="learnBtn">Send</button>
-  
+        <input name="newsletter" value="2" type="checkbox" id="newsletterM"><label for="newsletterM"> monthly newsletter  </label>
+        
+        <p>that notifies me of important events, dates, and oppurtunities!</p>
+        <br><br>
+
+        <input type="submit" value="Submit" class="learnBtn">
+        <input type="reset" value="Reset" class="learnBtn">
+      </fieldset>
       </form>
-    </div>
-  
-    </fieldset>
+
     <br>
   </main>
     <footer>
