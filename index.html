@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="Abdulrahman Muhammad, Bryan Naijo, John David">
-    <meta name="description" content = "The BCIS Roadmap, a website made by BCIS 
-    students for BCIS students to provide helpful resources on their path to finish
-    ther degree.">
-
-    <link ref="stylesheet" type="text/css" href=/css/stylesheet.css>
-    
+    <link rel="stylesheet" type="text/css" href="index.css">
     <title>
-      The BCIS Roadmap
+      Assignment 1: HTML & CSS
     </title>
   </head>
   <body>
-    <h1>The BCIS Roadmap</h1>
-    <hr>
+    <header>
+    <img class="logo" src="images/logo.png" height="90" width="120" alt="The BCIS Roadmap logo">
+    <h1 class="logoName">The BCIS Roadmap</h1>
+    <br>
+    </header>
     <nav>
+      <!--We used a table with a list with one list element to fulfill the menu and table requirements together-->
       <table>
           <thead>
               <tr>
                   <th colspan="1">
-                      <p>
-                        | <a href="index.html">Home</a>
-                        | <a href="progress.html">Your Roadmap</a> 
-                        | <a href="contact.html">Contact Us</a> |
-                      </p>
+                    <br>
+                      <p class="mainMenu"> <a href="index.html" class="selected">Home</a><a href="progress.html">Roadmap</a> <a href="contact.html">Contact Us</a></p>
+                      <br>
+
 
                   </th>
               </tr>
@@ -34,32 +32,70 @@
               <tr>
                   <td>
                     <ul>
-                      <li><a href="#intro">What is The BCIS Roadmap?</a></li>
-                      <li><a href="#links">Helpful Links</a></li>
+                      <li><small><a href="#roadmap">Your Roadmap So Far</a></small></li>
                     </ul>
                   </td>
               </tr>
+              <tr>
+                <td>
+                  <ul>
+                    <li><small><a href="#moreInfo">More Information</a></small></li>
+                  </ul>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <ul>
+                  <li><small><a href="#advising">Academic Advising</a></small></li>
+                </ul>
+              </td>
+          </tr>
           </tbody>
       </table>
 
+
   </nav>
+    <main>
 
-    <h2 id="intro">What is The BCIS Roadmap?</h2>
-    <p>
-      Let's get started!
-    </p>
 
-    <h2 id="links">Helpful Links</h2>
-    <p>
-      moved helpful links to index
-    </p>
+
+    <article>
+        <section>
+            <h2 id="intro">What is The BCIS Roadmap?</h2>
+            The BCIS roadmap is a resource made to help current BCIS students, or upcoming students understand what courses they need to take to graduate.
+            <br>
+            The roadmap offers specific courses on what to take each year, but also optional ones to help students explore different paths.
+            <br>
+            Below are some links, that can also help students with their academic journey.
+        </section>
+        <br>
+        <section>
+            <h2 id="links">Helpful Links</h2>
+            <p>
+                <a href="https://learn.mru.ca/">Website to MRU D2L BrightSpace</a>
+                <br>
+                <a href="https://www.mtroyal.ca/">Website to MRU main website</a>
+            </p>
+        </section>
+        <figure>
+            <img src="Virtual_Graduation_Ceremony.jpg">
+            <figcaption>This image shows an example of a person graduating</figcaption>
+        </figure>
+    </article>
+    </main>
+    <footer>
+        <hr>
+        <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
+        <br>
+        <small>Last Updated Feb 2024</small>
+        <br><br>
+        <small><a href="contact.html">Contact Us</a></small>
+      </footer>
   </body>
-  <footer>
-    <hr>
-    <small>&copy; Abdulrahman Muhammad, Bryan Naijo, John David</small>
-    <br>
-    <small>Last Updated Feb 2024</small>
-    <br><br>
-    <small><a href="contact.html">Contact Us</a></small>
-  </footer>
 </html>
+
+
+
+
+
+
