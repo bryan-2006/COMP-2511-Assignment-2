@@ -34,6 +34,14 @@ section, h3[class="yearHeader"]{
     vertical-align: -150%; /*https://www.w3schools.com/cssref/playdemo.php?filename=playcss_vertical-align&preval=50%25 is my source */
 }
 
+  img[class="floated"]{
+    float: right; /*https://www.w3schools.com/css/css_float.asp is my source */
+}
+
+p.style:first-letter{
+    font-size: 80px;
+    color: #333
+}
 
   /* Style for unordered lists and its items */
   li, ul [class="menu"]{
@@ -142,5 +150,4 @@ section, h3[class="yearHeader"]{
     bottom: 0;
     width: 100%;
   }
-
 
