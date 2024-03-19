@@ -1,6 +1,6 @@
 /* CSS rules for small screens */
 
-@media only screen and (max-width: 590px){
+@media only screen and (max-width: 589.99px){
 
     /* Reset some default styles */
 body, h1, h2, p, form, nav {
@@ -36,23 +36,38 @@ section{
   }
   
   h1[class="logoName"]{
-    display: inline;
+    display: none;
   }
 
+  img[alt="Cartoon Eyes"]{
+    width: 20%;
+    height: 20%;
+  }
   img[class="logo"]{
     vertical-align: -150%; /*https://www.w3schools.com/cssref/playdemo.php?filename=playcss_vertical-align&preval=50%25 is my source */
-}
+    width: 20%;
+    height: 20%;
+    min-width: 60px;
+  }
 
+  figure{
+    align-items: center;
+  }
+  figcaption {
+    font-size: 8px; /* Adjust the font size as needed */
+  }
   /* Style for unordered lists and its items */
   li, ul [class="menu"]{
     margin: 0;
     padding: 0;
   }
-
+figcaption {
+  font-size: 8px; /* Adjust the font size as needed */
+}
 
   /* Style the navigation menu */
   nav {
-    background-color: #f4f4f4;
+    background-color: #dbdbdb;
     padding: 10px;
     text-align: center; /* Center the content within the nav */
   }

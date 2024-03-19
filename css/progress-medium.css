@@ -1,6 +1,6 @@
 /* CSS rules for medium screens */
 
-@media only screen and (min-width: 591px) and (max-width: 789px){
+@media only screen and (min-width: 590px) and (max-width: 789.99px){
 
     /* Reset some default styles */
 body, h1, h2, p, form, nav {
@@ -31,16 +31,22 @@ section{
   header {
     background-color: #fff;
     color: #000000;
-    text-align: center;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
   
   h1[class="logoName"]{
-    display: inline;
+    grid-row: 1;
+    grid-column: 2;
+    align-self: center;
+    justify-self: end;
+    width: 60%;
   }
 
   img[class="logo"]{
-    vertical-align: -150%; /*https://www.w3schools.com/cssref/playdemo.php?filename=playcss_vertical-align&preval=50%25 is my source */
+   padding-left: 10%;
 }
 
   /* Style for unordered lists and its items */
@@ -52,7 +58,7 @@ section{
 
   /* Style the navigation menu */
   nav {
-    background-color: #f4f4f4;
+    background-color: #dbdbdb;
     padding: 10px;
     text-align: center; /* Center the content within the nav */
   }
@@ -183,5 +189,11 @@ section{
 
   #small{
     display: none;
+  }
+  figure{
+    align-items: center;
+  }
+  figcaption {
+    font-size: 8px; /* Adjust the font size as needed */
   }
 }
