@@ -5,7 +5,8 @@
     <meta name="author" content="Bryan Naijo, John David, Abdulrahman Muhammad">
     <meta name="keyword" content="mru, progress, BCIS, courses, form">
     <meta name="description" content="The form used to track your BCIS path">
-    <link rel="stylesheet" type="text/css" href="css/progress.css">
+    <link rel="stylesheet" type="text/css" href="css/progress-small.css" media="screen and (max-width: 590px)">
+    <link rel="stylesheet" type="text/css" href="css/progress-medium.css" media="screen and (min-width: 591px) and (max-width: 789px)">
     <title>
       The BCIS roadmap
     </title>
@@ -18,7 +19,7 @@
     </header>
     <nav>
       <!--We used a table with a list with one list element to fulfill the menu and table requirements together-->
-      <table>
+      <table id="notSmall">
           <thead>
               <tr>
                   <th colspan="1">
@@ -30,51 +31,74 @@
               </tr>
           </thead>
           <tbody>
+            
               <tr>
                   <td>
-                    <ul>
-                      <li><small><a href="#roadmap">Your Roadmap So Far</a></small></li>
-                    </ul>
+                    <p class="mainMenu"><small><a href="#roadmap">Your Roadmap So Far</a></small></p>
                   </td>
               </tr>
               <tr>
                 <td>
-                  <ul>
-                    <li><small><a href="#moreInfo">More Information</a></small></li>
-                  </ul>
+                  <p class="mainMenu"><small><a href="#moreInfo">More Information</a></small></p>
                 </td>
             </tr>
             <tr>
               <td>
-                <ul>
-                  <li><small><a href="#advising">Academic Advising</a></small></li>
-                </ul>
+
+                <p class="mainMenu"><small><a href="#advising">Academic Advising</a></small></p>
+
               </td>
           </tr>
           </tbody>
       </table>
-
+      <table id="small">
+        <thead>
+          <tr>
+            <td> <strong><p class="mainMenu"> <a href="index.html">Home</a></p></strong></td>
+          </tr>
+          <tr>
+            <td> <strong><p class="mainMenu"><a href="progress.html" class="selected">Roadmap</a> </p></strong></td>
+          </tr>
+          <tr>
+            <td><strong><p class="mainMenu"><a href="contact.html">Contact Us</a></p></strong></td>
+          </tr>
+        </thead>
+        <tbody>
+          
+            <tr>
+                <td>
+                <p class="mainMenu"><small ><a href="#roadmap">Your Roadmap So Far</a></small></p>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="mainMenu"><small><a href="#moreInfo">More Information</a></small></p>
+              </td>
+          </tr>
+          <tr>
+            <td>
+              <p class="mainMenu"><small><a href="#advising">Academic Advising</a></small></p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
   </nav>
   <main>
-    <br><br>
-    <section>
+    <section id="roadmapSection">
     <h2 id="roadmap">Your Roadmap So Far</h2>
     <br>
     <p>
         This webpage allows students to track their progress by 
-        following the BCIS guide from 2023-2024. This means that by 
+        following the BCIS guide from 2023-2024 for 1st and 2nd year. This means that by 
         filling out the form from start to finish, the student has no 
         need to worry about prerequisites or about knowing which classes
         that go towards their degree they need to take.  
     </p>
-    <br>
-  </section>
+    </section>
     <form id="progress" method="get" action="responder.html">
-      <br>
-      <br>
-        <h3 class="yearHeader">1st Year</h3>
-        <fieldset>
-            <legend>Fall</legend>
+
+        <fieldset id="f1">
+            <legend>Fall 1st Year</legend>
             <input name="comp1701" id="comp1701" type="radio">    
             <label for="comp1701">COMP 1701 </label>
             <br><br>
@@ -107,10 +131,9 @@
               <input name="gnedc1t1" id="gned1304a" type="radio">    
               <label for="gned1304a"><a href="#gnedInfo">GNED</a> 1304 </label>
             </fieldset>
-
         </fieldset>
-        <fieldset>
-            <legend>Winter</legend>
+        <fieldset id="w1">
+            <legend>Winter 1st Year</legend>
             <input name="comp1502" id="comp1502" type="radio">    
             <label for="comp1502">COMP 1502 </label>
             <br><br>
@@ -140,9 +163,8 @@
         </fieldset>
         <br>
         <br>
-        <h3 class="yearHeader">2nd Year</h3>
-        <fieldset>
-          <legend>Fall</legend>
+        <fieldset id="f2">
+          <legend>Fall 2nd Year</legend>
           <input name="acct2121" id="acct2121" type="radio">    
           <label for="acct2121">ACCT 2121 </label>
           <br><br>
@@ -163,14 +185,14 @@
           <label for="gned2XXX">Tier 2 from <a href="#gnedInfo">GNED</a> Cluster 2/3/4 </label>
           <br><br>
           <fieldset>
-            <legend>or in Winter</legend>
+            <legend>or in Winter 2nd Year</legend>
             <input name="coop" id="coopA" type="radio">    
             <label for="coopA">COOP 0001 </label>
           </fieldset>
 
       </fieldset>
-      <fieldset>
-          <legend>Winter</legend>
+      <fieldset id="w2">
+          <legend>Winter 2nd Year</legend>
           <input name="hres2170" id="hres2170" type="radio">    
           <label for="hres2170">HRES 2170 </label>
           <br><br>
@@ -187,96 +209,12 @@
           <label for="anotherTier2GNED">Tier 2 from <a href="#gnedInfo">GNED</a> Cluster 2/3/4 </label>
           <br><br>
           <fieldset>
-            <legend>or in Fall</legend>
+            <legend>or in Fall 2nd Year</legend>
             <input name="coop" id="coop" type="radio">    
             <label for="coop">COOP 0001 </label>
           </fieldset>
-      </fieldset>
-      <br>
-      <br>
-      <h3 class="yearHeader">3rd Year</h3>
-      <fieldset>
-          <legend>Fall</legend>
-          <input name="comp3523" id="comp3523" type="radio">    
-          <label for="comp3523">COMP 3523 </label>
-          <br><br>
-          <input name="comp3512" id="comp3512" type="radio">    
-          <label for="comp3512">COMP 3512 </label>
-          <br><br>
-          <input name="advancedCS1" id="advancedCS1" type="radio">    
-          <label for="advancedCS1">Advanced Senior CS Option </label>
-          <br><br>
-          <input name="advancedBusiness1" id="advancedBusiness1" type="radio">    
-          <label for="advancedBusiness1">Advanced Senior Business Option </label>
-          <br><br>
-          <input name="gned3XXX1" id="gned3XXX1" type="radio">    
-          <label for="gned3XXX1">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
-      </fieldset>
-      <fieldset>
-          <legend>Winter</legend>
-          <input name="comp3533" id="comp3533" type="radio">    
-          <label for="comp3533">COMP 3533 </label>
-          <br><br>
-          <input name="comp3309" id="comp3309" type="radio">    
-          <label for="comp3309">COMP 3309 </label>
-          <br><br>
-          <input name="advancedCS2" id="advancedCS2" type="radio">    
-          <label for="advancedCS2">Advanced Senior CS Option </label>
-          <br><br>
-          <input name="gned3XXX2" id="gned3XXX2" type="radio">    
-          <label for="gned3XXX2">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
-          <br><br>
-          <input name="gned3XXX3" id="gned3XXX3" type="radio">    
-          <label for="gned3XXX3">Tier 3 from <a href="#gnedInfo">GNED</a> Cluster 1/2/3/4 </label>
-      </fieldset>
-      <fieldset>
-        <legend>Spring/Summer</legend>
-        <input name="comp3591" id="comp3591" type="radio">    
-        <label for="comp3591">COMP 3591 </label>
-      </fieldset>
-      <br>
-      <br>
-        <h3 class="yearHeader">4th Year</h3>
-        <fieldset>
-            <legend>Fall</legend>
-            <input name="comp4534" id="comp4534" type="radio">    
-            <label for="comp4534">COMP 4534 </label>
-            <br><br>
-            <input name="advancedCS3" id="advancedCS3" type="radio">    
-            <label for="advancedCS3">Advanced Senior CS Option </label>
-            <br><br>
-            <input name="advancedCS4" id="advancedCS4" type="radio">    
-            <label for="advancedCS4">Advanced Senior CS Option </label>
-            <br><br>
-            <input name="elective1" id="elective1" type="radio">    
-            <label for="elective1">Elective Course </label>
-            <br><br>
-            <input name="elective2" id="elective2" type="radio">    
-            <label for="elective2">Elective Course </label>
-            <br>
-        </fieldset>
-        <fieldset>
-            <legend>Winter</legend>
-            <input name="advancedBusiness2" id="advancedBusiness2" type="radio">    
-            <label for="advancedBusiness2">Advanced Senior Business Option </label>
-            <br><br>
-            <input name="advancedCSorBusiness1" id="advancedCSorBusiness1" type="radio">    
-            <label for="advancedCSorBusiness1">Advanced Senior CS or Business Option </label>
-            <br><br>
-            <input name="advancedCSorBusiness2" id="advancedCSorBusiness2" type="radio">    
-            <label for="advancedCSorBusiness2">Advanced Senior CS or Business Option </label>
-            <br><br>
-            <input name="elective3" id="elective3" type="radio">    
-            <label for="elective3">Elective Course </label>
-            <br><br>
-            <input name="elective4" id="elective4" type="radio">    
-            <label for="elective4">Elective Course </label>
-            <br>
-        </fieldset>
+      </fieldset>     
       </form>
-
-      <br>
-      <br>
 
       <article>
         <br>
