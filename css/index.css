@@ -117,7 +117,8 @@ p.style:first-letter{
 
 
   p[class="mainMenu"]{
-    margin-left: 10px;
+    align-items: center;
+    margin-left: 0px;
     margin-right: 0px;
   }
  
@@ -130,8 +131,6 @@ p.style:first-letter{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
- 
- 
  
   form {
     display: flex;
@@ -156,10 +155,6 @@ p.style:first-letter{
   .learnBtn:hover {
     background-color: #555;
   }
- 
-
-
-
 
   /* Style the footer section */
   footer {
@@ -171,3 +166,5 @@ p.style:first-letter{
     bottom: 0;
     width: 100%;
   }
+
+

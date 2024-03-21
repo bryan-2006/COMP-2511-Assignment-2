@@ -149,9 +149,10 @@ footer {
 
 main {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
     align-items: center;
+    grid-template-columns: 1fr; /* Adjust the width of the first column as needed */
+    grid-template-rows: 1fr 1fr 1fr 1fr; /* Adjust the height of the rows as needed */
+    grid-gap: 10%;
 }
 
 #roadmapSection {
@@ -167,4 +168,41 @@ h3.yearHeader {
 #notSmall {
     display: none;
 }
+
+#int {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    margin:auto;
+}
+
+#grad {
+    grid-row: 2/2;
+    grid-column: 1/1;
+    margin:auto;
+    margin-left: 8%;
+    margin-right: 5%;
+    padding: 10px;
+    align-self: center;
+}
+
+#code {
+    grid-row: 3/3;
+    grid-column: 1/1;
+    margin:auto;
+    margin-left: 8%;
+    margin-right: 5%;
+    padding: 10px;
+    align-self: center;
+}
+
+#help {
+    grid-row: 4/4;
+    grid-column: 1/1;
+    margin:auto;
+}
+
+#caption {
+    margin-right: 35%;
+}
+
 }
