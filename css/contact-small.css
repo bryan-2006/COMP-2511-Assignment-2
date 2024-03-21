@@ -1,4 +1,5 @@
-/* Reset some default styles */
+@media only screen and (max-width: 589.99px){
+
 body, h1, h2, p, form, nav {
     margin: 0;
     padding: 0;
@@ -104,3 +105,4 @@ body, h1, h2, p, form, nav {
     width: 100%;
   }
   
+}
