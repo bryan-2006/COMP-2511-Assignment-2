@@ -138,7 +138,11 @@
     }
   
     main {
-      align-items: center;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr; /* Adjust the width of the first column as needed */
+        grid-template-rows: 1fr 1fr; /* Adjust the height of the rows as needed */
+        grid-gap: 10%;
     }
   
     #roadmapSection {
@@ -149,26 +153,6 @@
   
     h3.yearHeader {
       margin: auto;
-    }
-  
-    #f1 {
-      grid-row: 1/1;
-      grid-column: 1;
-    }
-  
-    #w1 {
-      grid-row: 1/1;
-      grid-column: 2;
-    }
-  
-    #f2 {
-      grid-row: 2/2;
-      grid-column: 1;
-    }
-  
-    #w2 {
-      grid-row: 2/2;
-      grid-column: 2;
     }
   
     #small {
