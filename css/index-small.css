@@ -122,14 +122,14 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
+}   
 
-main {
+article {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr; /* Adjust the width of the first column as needed */
     grid-template-rows: 1fr 1fr 1fr 1fr; /* Adjust the height of the rows as needed */
-    grid-gap: 10%;
+    grid-gap: 2%;
 }
 
 #roadmapSection {
