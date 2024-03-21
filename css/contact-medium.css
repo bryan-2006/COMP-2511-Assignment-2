@@ -1,0 +1,106 @@
+@media only screen and (min-width: 590px) and (max-width: 789.99px) {
+
+body, h1, h2, p, form, nav {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the main body section */ 
+  section, h3[class="yearHeader"] {
+    margin-left: 33px;
+    margin-right: 50px;
+    align-self: center;
+  }
+  
+  /* Apply a background color and set font styles */
+  body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header section */
+  header {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1[class="logoName"] {
+    display: inline;
+  }
+  
+  img[class="logo"] {
+    vertical-align: -150%;
+  }
+  
+  /* Style for unordered lists and its items */
+  li, ul[class="menu"] {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center; /* Center the content within the nav */
+  }
+  
+  nav a {
+    color: #9e9e9e;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  nav a[class="selected"] {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  /* Style the main content section */
+  fieldset {
+    width: 80%; /* Adjusted for medium screens */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* for forms */
+  .form-input,
+  .form-textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  
+  .learnBtn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .learnBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Style the footer section */
+  footer {
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+}
