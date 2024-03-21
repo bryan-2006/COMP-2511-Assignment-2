@@ -98,30 +98,7 @@ p.mainMenu {
 }
 
 /* Style the main content section */
-fieldset {
-    width: 90%;
-    margin: 20px auto;
-    padding: 5%;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    grid-column: 1;
-    grid-row: 2;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 5%;
-}
-
-.form-input,
-.form-textarea {
-    margin-bottom: 10px;
-    padding: 10px;
-}
 
 .learnBtn {
     background-color: #333;
