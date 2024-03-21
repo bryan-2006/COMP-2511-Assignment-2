@@ -139,11 +139,12 @@
   
     main {
         display: grid;
-        align-items: center;
-        grid-template-columns: 1fr 1fr; /* Adjust the width of the first column as needed */
-        grid-template-rows: 1fr 1fr; /* Adjust the height of the rows as needed */
-        grid-gap: 10%;
-    }
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+        width: 80%;
+      }
   
     #roadmapSection {
       margin-top: 10%;
@@ -171,4 +172,38 @@
     figcaption {
       font-size: 8px; /* Adjust the font size as needed */
     }
+
+    #int {
+        grid-row: 1/1;
+        grid-column: 1;
+        margin:auto;
+    }
+    
+    #grad {
+        grid-row: 1/1;
+        grid-column: 2;
+        margin:auto;
+        margin-left: 8%;
+        margin-right: 5%;
+        padding: 10px;
+        align-self: center;
+    }
+    
+    #code {
+        grid-row: 2/2;
+        grid-column: 1;
+        margin:auto;
+        margin-left: 8%;
+        margin-right: 5%;
+        padding: 10px;
+        align-self: center;
+    }
+    
+    #help {
+        grid-row: 2/2;
+        grid-column: 2;
+        margin:auto;
+    }
+
+
   }
