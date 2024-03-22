@@ -29,8 +29,10 @@
     header {
       background-color: #fff;
       color: #000000;
-      text-align: center;
       padding: 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
     }
   
     h1[class="logoName"] {
