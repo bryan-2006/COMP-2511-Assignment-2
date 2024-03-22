@@ -102,5 +102,48 @@ body, h1, h2, p, form, nav {
     bottom: 0;
     width: 100%;
   }
-  
+
+  main{
+    align-items: center;
+  }
+
+  #roadmapSection{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    grid-row: 1;
+  }
+
+  h3[class="yearHeader"]{
+    margin: auto;
+  }
+
+  #f1{
+    grid-row: 1/1;
+    grid-column: 1;
+  }
+
+  #w1{
+    grid-row: 1/1;
+    grid-column: 2;
+  }
+
+  #f2{
+    grid-row: 2/2;
+    grid-column: 1;
+  }
+
+  #w2{
+    grid-row: 2/2;
+    grid-column: 2;
+  }
+
+  #small{
+    display: none;
+  }
+  figure{
+    align-items: center;
+  }
+  figcaption {
+    font-size: 8px; /* Adjust the font size as needed */
+  }
 }
