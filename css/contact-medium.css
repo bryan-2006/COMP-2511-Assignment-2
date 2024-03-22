@@ -64,7 +64,6 @@ body, h1, h2, p, form, nav {
   
   /* Style the main content section */
   fieldset {
-    width: 80%; /* Adjusted for medium screens */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -145,5 +144,25 @@ body, h1, h2, p, form, nav {
   }
   figcaption {
     font-size: 8px; /* Adjust the font size as needed */
+  }
+  #gridForm{
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+  }
+
+  #emailInGRID{
+    grid-column: 1;
+    grid-row: 1;
+
+  }
+
+  #gridButtons{
+    margin: auto;
+  }
+
+  form{
+    width: 90%;
   }
 }
