@@ -1,5 +1,4 @@
 @media only screen and (min-width: 790px) {
-
   body, h1, h2, p, form, nav {
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@
   section {
     grid-column: 1;
     margin: auto;
-    margin-left: 10%;
+    margin-left: 2%;
     margin-right: 5%;
     width: 80%;
     padding: 10px;
@@ -18,7 +17,6 @@
   }
 
   /* Apply a background color and set font styles */
-
   body {
     background-color: #f4f4f4;
     font-family: Arial, sans-serif;
@@ -54,9 +52,6 @@
   img[class="logo"] {
     padding-left: 10%;
   }
-
-
-  
 
   figure{
     align-items: center;
@@ -109,7 +104,7 @@ p.mainMenu {
 
   /* Style the main content section */
   fieldset {
-    width: 100%;
+    width: 90%; /* Adjusted for medium screens */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
@@ -151,5 +146,21 @@ p.mainMenu {
   #small {
     display: none;
   }
+  figure{
+    align-items: center;
+  }
+  figcaption {
+    font-size: 8px; /* Adjust the font size as needed */
+  }
 
+  #gridForm{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5%;
+  }
+
+  #gridButtons{
+    margin-top: 20%;
+  }
 }
