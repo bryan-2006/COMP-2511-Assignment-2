@@ -163,4 +163,8 @@ p.mainMenu {
   #gridButtons{
     margin-top: 20%;
   }
+
+  #emailInGRID{
+    background-color: #e0e0e0;
+  }
 }
