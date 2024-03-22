@@ -105,7 +105,7 @@ p.mainMenu {
 
   /* Style the main content section */
   fieldset {
-    width: 80%; /* Adjusted for medium screens */
+    width: 90%; /* Adjusted for medium screens */
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
